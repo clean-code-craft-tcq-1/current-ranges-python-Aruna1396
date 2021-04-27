@@ -52,5 +52,14 @@ Adapt/adopt/extend the `yml` files from one of your workflow folders.
 
 Implement one failing test and at least one passing test:
 
-- _enter the name of a **passing** test
-- _enter the name of a **failing** test
+
+## Test-driven development:
+
+Step 1: Deciding quality parameters
+        CCN = 3
+        Duplication = --min-lines 3 --min-tokens 25 --threshold 0
+        coverage = 100 %
+
+Step 2: The smallest possible failing test
+
+test_checks_if_input_data_is_valid() is the first test case developed which is currently failing without an implementation
