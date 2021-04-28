@@ -63,3 +63,6 @@ Step 1: Deciding quality parameters
 Step 2: The smallest possible failing test
 
 test_checks_if_input_data_is_valid() is the first test case developed which is currently failing without an implementation
+
+Step 3: Writing the minimum amount of code that'll make it pass.
+        check_NaN_in_input() and is_input_valid() are the functions that make test_checks_if_input_data_is_valid() test pass
