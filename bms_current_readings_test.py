@@ -12,6 +12,13 @@ class BMSCurrentReadingTest(unittest.TestCase):
             self.assertEqual((bms.is_input_valid(invalid_input)), 'INVALID_INPUT')
         self.assertEqual((bms.is_input_valid(valid_input)), 'VALID_INPUT')
 
+## Failing Test
+
+    def test_yields_ranges_for_input_current_readings(self):
+        current_readings = [3, 3, 5, 4, 10, 11, 12]
+        expected_ranges = [{3: 5}, {10: 12}]
+        self.assertEqual((bms.find_ranges_in_current_readings(current_readings)), expected_ranges)
+
 
 if __name__ == '__main__':
     unittest.main()

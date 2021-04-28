@@ -52,6 +52,8 @@ Adapt/adopt/extend the `yml` files from one of your workflow folders.
 
 Implement one failing test and at least one passing test:
 
+ - test_if_input_data_check_yields_valid_or_invalid() :- passing test
+ - test_yields_ranges_for_input_current_readings() :- failing test
 
 ## Test-driven development:
 
@@ -61,8 +63,10 @@ Step 1: Deciding quality parameters
         coverage = 100 %
 
 Step 2: The smallest possible failing test
-
-test_if_input_data_check_yields_valid_or_invalid() is the first test case developed which is currently failing without an implementation
+        "test_if_input_data_check_yields_valid_or_invalid()" is the first test case developed which is currently failing without an implementation
 
 Step 3: Writing the minimum amount of code that'll make it pass.
         is_NaN_in_input() and is_input_valid() are the functions that make test_checks_if_input_data_is_valid() test pass
+
+Step 4: Writing the next failing test
+        "test_yields_ranges_for_input_current_readings()"
